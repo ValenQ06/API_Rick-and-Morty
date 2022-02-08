@@ -21,12 +21,14 @@ const fillData = (data) => {
     html += '<div class="col">';
     html += '<div class="card h-100">';
     html += `<img src="${ch.image}" class="card-img-top" alt="...">`; // esta lleva comilla acostada porque ahi vamos a poner la foto del personaje
-    html += '<div class="card-body">';
+    html += '<div class="bg-second">';
+    //html += '<div class="card-body">';
     html += `<h5 class="card-title">${ch.name}</h5>`;
     html += `<p>species: ${ch.species}</p>`;
     html += "</div>";
     html += "</div>";
     html += "</div>";
+    //html += "</div>";
   });
   document.getElementById("characters").innerHTML = html;
 };
